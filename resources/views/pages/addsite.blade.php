@@ -17,7 +17,7 @@
                 @error('url_site') {{$message}}@enderror
             </div>
             <div class="inputs flex j-bet">
-                <textarea name="post_site" class='post_site' cols="30" rows="10" placeholder="مقالة الموقع" required></textarea>
+                <textarea name="post_site" id="post_site" class='post_site' cols="30" rows="10" placeholder="مقالة الموقع" required></textarea>
                 @error('post_site') {{$message}}@enderror
                 <textarea name="table_site" class='table_site' cols="30" rows="10" placeholder="جدول الموقع" required></textarea>
                 @error('table_site') {{$message}}@enderror
@@ -31,4 +31,7 @@
         <p>يجب على المقالة ان تستوفي بعض الشروط لكي تعمل بنجاح بدون أي مشكلات تواجهك
             في محتوى المقالة او سياق الكلام . <a href=""><span>شروط المقالة</span></a></p>
     </div>
+@endsection
+@section('footer')
+    <script src="{{asset('js/main.js')}}"></script>
 @endsection

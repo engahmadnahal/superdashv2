@@ -141,3 +141,12 @@ function getDataInput(inpust){
         });
     });
 }
+
+
+// add tag [imgTag] , and replace <img> tag
+
+let postSite = document.getElementById('post_site');
+postSite.addEventListener('input',function (){
+    let valueAfterReplacee = postSite.value.replace('<img',"[imgTag]");
+    postSite.value = valueAfterReplacee;
+});
