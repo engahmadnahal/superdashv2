@@ -144,7 +144,8 @@ function getDataInput(inpust){
 
 // add tag [imgTag] , and replace <img> tag name
 let postSite = document.getElementById('post_site');
-postSite.addEventListener('input',function (){
+
+postSite.addEventListener('change',function (){
     let valueAfterReplacee = postSite.value.replace('<img',"[imgTag]");
-    postSite.value = valueAfterReplacee;
+    postSite.value = valueAfterReplacee.replace('style',"data-style");
 });
