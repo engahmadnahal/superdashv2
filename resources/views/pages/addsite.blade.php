@@ -19,7 +19,7 @@
             <div class="inputs flex j-bet">
                 <textarea name="post_site" id="post_site" class='post_site' cols="30" rows="10" placeholder="مقالة الموقع" required></textarea>
                 @error('post_site') {{$message}}@enderror
-                <textarea name="table_site" class='table_site' cols="30" rows="10" placeholder="جدول الموقع" required></textarea>
+                <textarea name="table_site" id="table_site" class='table_site' cols="30" rows="10" placeholder="جدول الموقع" required></textarea>
                 @error('table_site') {{$message}}@enderror
             </div>
             <div class='save_change'><button type="submit"><span>حفظ التغيرات</span></button></div>

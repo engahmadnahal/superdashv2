@@ -17,10 +17,10 @@
                 <input type="text" placeholder="رابط الموقع " name='url_site' value="{{$dataSite->url_site}}">
                 @error('url_site') {{$message}} @enderror
             </div>
-            <div>
+            <div class="inputs flex j-bet">
                 <textarea name="post_site" id="post_site" class='post_site' cols="30" rows="10" placeholder="مقالة الموقع">{{$dataSite->post_site}}</textarea>
                 @error('post_site') {{$message}}@enderror
-                <textarea name="table_site" class='table_site' cols="30" rows="10" placeholder="جدول الموقع" required>{{$dataSite->table}}</textarea>
+                <textarea name="table_site" id="table_site" class='table_site' cols="30" rows="10" placeholder="جدول الموقع" required>{{$dataSite->table}}</textarea>
                 @error('table_site') {{$message}}@enderror
             </div>
             @error('post_site') {{$message}} @enderror

@@ -144,8 +144,14 @@ function getDataInput(inpust){
 
 // add tag [imgTag] , and replace <img> tag name
 let postSite = document.getElementById('post_site');
+let tableSite = document.getElementById('table_site');
 
 postSite.addEventListener('change',function (){
     let valueAfterReplacee = postSite.value.replace('<img',"[imgTag]");
-    postSite.value = valueAfterReplacee.replace('style',"data-style");
+    postSite.value = valueAfterReplacee.replace('style',"[styleTag]").replace('src','[srcTag]');
+});
+
+tableSite.addEventListener('change',function (){
+    let valueAfterReplace = tableSite.value.replace('src','[srcTag]');
+    tableSite.value = valueAfterReplace.replace('<img',"[imgTag]");
 });
