@@ -368,3 +368,38 @@ input[type="color"] {
     border: 0;
     width: 24px;
 }
+/* Support page */
+.support-table {
+    margin: 30px 0;
+}
+.table table {
+    width: 100%;
+}
+.table thead {
+    text-align: center;
+    display: table-row-group;
+    height: 43px;
+    background: #3b3b3b;
+}
+
+.table thead th {
+    color: #fff;
+}
+.table tbody {
+    text-align: center;
+}
+.table td {
+    padding: 15px 13px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.table tr:nth-child(even) {
+    border: 1px solid #ddd;
+    background: #ddd;
+}
+span.tag-copy {
+    cursor: pointer;
+}
+span.tag-copy:hover {
+    color: #000;
+}

@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
+
+    public function support(){
+        return view('pages.support');
+    }
     public function getTable($id){
         $tableOfMatches = PostUser::where('user_id','=',session('logged'))->get();
         $site = Sites::where('site_id',$id)->first();

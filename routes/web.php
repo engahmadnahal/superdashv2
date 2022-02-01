@@ -49,6 +49,8 @@ Route::group(['middleware'=>['authchake']],function (){
     Route::post('/postsetting/{id}','CreateImgController@sendData')->name('pages.postsetting');
     Route::post('/editsetting/{id}','CreateImgController@updateData')->name('pages.editsetting');
 
+    // Support page
+    Route::get('/support','PostController@support')->name('pages.support');
 
 
 
