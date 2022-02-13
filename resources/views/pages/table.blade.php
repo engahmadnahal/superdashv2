@@ -19,7 +19,7 @@ function createTable($table,$item){
 }
 
 function replacePost($table,$item){
-    $arrReplac = ["nameOne","nameTwo","logoOne","logoTwo","botola","beasTime","beasTimeMinusOne","beasTimeMinusTwo","voiceOver","timeStartMatch","urlChannel","dateMatch","timeDate","channel","urlPost","srcTag","imgTag"];
+    $arrReplac = ["nameOne","nameTwo","logoOne","logoTwo","botola","beasTime","beasTimeMinusOne","beasTimeMinusTwo","voiceOver","timeStartMatch","urlChannel","dateMatch","timeDate","channel","urlPost","srTag","iTag"];
     global $postAfterEdit;
     $postAfterEdit = $table;
     for($i = 0 ; $i < count($arrReplac); $i++){
@@ -62,9 +62,9 @@ function replaceVarible($varReplace,$items){
             return $items->channel;
         case "[urlPost]" :
             return date('Y/m')."/".$items->url_match;
-        case "[srcTag]" :
+        case "[srTag]" :
             return "src";
-        case "[imgTag]" :
+        case "[iTag]" :
             return "<img ";
 
     }

@@ -147,11 +147,11 @@ let postSite = document.getElementById('post_site');
 let tableSite = document.getElementById('table_site');
 
 postSite.addEventListener('change',function (){
-    let valueAfterReplacee = postSite.value.replace('<img',"[imgTag]");
-    postSite.value = valueAfterReplacee.replace('style',"[styleTag]").replace('src','[srcTag]');
+    let valueAfterReplacee = postSite.value.replace('<img',"[iTag]");
+    postSite.value = valueAfterReplacee.replace('style',"[stTag]").replace('src','[srTag]');
 });
 
 tableSite.addEventListener('change',function (){
-    let valueAfterReplace = tableSite.value.replace('src','[srcTag]');
-    tableSite.value = valueAfterReplace.replace('<img',"[imgTag]");
+    let valueAfterReplace = tableSite.value.replace('src','[srTag]');
+    tableSite.value = valueAfterReplace.replace('<img',"[iTag]");
 });

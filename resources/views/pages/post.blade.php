@@ -20,7 +20,7 @@
     }
 
      function replacePost($img,$post,$item){
-        $arrReplac = ["nameOne","nameTwo","imgPost","botola","beasTime","beasTimeMinusOne","beasTimeMinusTwo","voiceOver","timeStartMatch","urlChannel","dateMatch","timeDate","channel","urlPost","imgTag","/imgTag","srcTag","styleTag"];
+        $arrReplac = ["nameOne","nameTwo","imgPost","botola","beasTime","beasTimeMinusOne","beasTimeMinusTwo","voiceOver","timeStartMatch","urlChannel","dateMatch","timeDate","channel","urlPost","iTag","/imgTag","srTag","stTag"];
         global $postAfterEdit;
          $postAfterEdit = $post;
         for($i = 0 ; $i < count($arrReplac); $i++){
@@ -61,13 +61,13 @@
                 return $items->channel;
             case "[urlPost]" :
                 return $items->url_match;
-            case "[imgTag]" :
+            case "[iTag]" :
                 return "<img ";
             case "[/imgTag]" :
                 return "/>";
-            case "[srcTag]" :
+            case "[srTag]" :
                 return "src";
-            case "[styleTag]" :
+            case "[stTag]" :
                 return "style";
 
 
