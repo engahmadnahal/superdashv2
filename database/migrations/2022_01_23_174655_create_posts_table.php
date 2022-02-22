@@ -26,7 +26,6 @@ class CreatePostsTable extends Migration
             $table->string("channel");
             $table->string("url_channel");
             $table->string("url_match");
-
             $table->timestamps();
         });
     }

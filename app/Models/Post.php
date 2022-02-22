@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-    use HasFactory;
+    use HasFactory,SoftDeletes;
     protected $table = "sup_data_postes";
     protected $fillable = [
         "name_one",
@@ -22,4 +23,5 @@ class Post extends Model
         "voice_over",
         "url_match"
     ];
+    protected $primaryKey = 'data_id';
 }

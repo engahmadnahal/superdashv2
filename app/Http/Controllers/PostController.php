@@ -115,7 +115,10 @@ class PostController extends Controller
         return redirect()->route('pages.matches')->with('msgSuccess','تم الحذف بنجاح');
     }
     public function deleteAllMatch(){
-        Post::truncate();
+        $posts = Post::all();
+        foreach($posts as $item){
+            Post::find($item->data_id)->delete();
+        }
         return redirect()->route('pages.matches')->with('msgSuccess','تم الحذف بنجاح');
     }
 }
