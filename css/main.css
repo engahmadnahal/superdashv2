@@ -1,0 +1,405 @@
+
+@font-face {
+    font-family: 'tjw';
+    src: url('../fonts/Tajawal-Regular.ttf');
+}
+/* varible */
+:root{
+    --main-color : #1A4EA6;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    color: var(--main-color);
+    font-family: 'tjw';
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+button{
+    cursor: pointer;
+}
+input,textarea{
+    outline: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.flex{
+	display: flex;
+}
+.inline-block{
+	display: inline-block;
+}
+.t-center{
+	text-align: center;
+}
+.algin-center{
+	align-items: center;
+}
+.j-center{
+	justify-content: center;
+}
+.j-bet{
+	justify-content: space-between;
+}
+.j-aru{
+	justify-content: space-around;
+}
+.container{
+	margin: 0 auto;width: 90%;overflow: hidden;
+}
+.wrap{
+	flex-wrap: wrap;
+
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+
+}
+
+/* Start Css */
+
+/* ======== Start Header ======== */
+
+.header {
+    width: 22%;
+    background-color: var(--main-color);
+    height: 100vh;
+}
+.logo {
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.logo span {
+    font-size: 45px;
+    color: #fff;
+    font-weight: bold;
+}
+.navbar ul {
+    margin: 0;
+    padding-right: 50px;
+}
+.navbar li {
+    font-size: 20px;
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.navbar li a {
+    color: #fff;
+}
+
+li.active , .navbar li:hover {
+    background: #fff;
+
+}
+li.active a , .navbar li:hover a {
+    color: var(--min-color);
+}
+/* ======== Start Content body section ======== */
+
+.content-body {
+    width: 78%;
+    overflow-y: scroll;
+    height: 100vh;
+
+
+}
+.title-page h1 {
+    margin: 30px 0;
+}
+
+/* ===== Start Add new site section ====*/
+.add-new-site button {
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 6px;
+    border: 0;
+    padding: 7px 16px;
+}
+.add-new-site button .add {
+    font-weight: bold;
+}
+.add-new-site button span {
+    color: #fff;
+}
+/* ===== End Add new site section ====*/
+
+
+
+
+/* ===== Start Show sites section ====*/
+.show-all-sites {
+    margin: 40px 0;
+}
+.site {
+    margin: 14px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+.info {
+    overflow: hidden;
+    width: 70%;
+}
+.info {
+    overflow: hidden;
+    width: 70%;
+}
+.actions {
+    width: 30%;
+}
+.title-site {
+    font-size: 22px;
+    font-weight: bold;
+}
+.actions button {
+    border-radius: 25px;
+    border: 1px solid var(--main-color);
+    padding: 0 29px;
+    height: 43px;
+    margin-left: 17px;
+    font-size: 17px;
+    background: transparent;
+}
+.actions button:hover {
+    background: var(--main-color);
+}
+.actions button:hover span {
+    color: #fff;
+}
+
+/* ====== Start Edit page ========*/
+.edit-form{
+    margin-top: 10%;
+}
+.inputs {
+    margin: 25px 0;
+}
+
+.inputs input {
+    border: 1px solid var(--main-color);
+    width: 49%;
+    padding: 12px;
+    border-radius: 10px;
+    color : black;
+}.post_site {
+    border: 1px solid var(--main-color);
+    width: 49%;
+    padding: 12px;
+    border-radius: 10px;
+}
+.table_site {
+    border: 1px solid var(--main-color);
+    width: 49%;
+    padding: 12px;
+    border-radius: 10px;
+}
+.save_change button{
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 6px;
+    border: 0;
+    padding: 7px 16px;
+}
+.save_change button span{
+    color: #fff;
+}
+.save_change {
+    text-align: center;
+    margin: 13px 0;
+}
+.notes h3{
+    margin:  3px 0;
+}
+.notes p {
+    color: #8b8b8b;
+}
+
+
+/* Start matches page */
+
+.show-all-matches {
+    margin: 40px 0;
+}
+.match {
+    margin: 14px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+.match .actions {
+    border-right: 2px solid #ccc;
+}
+.club_logo {
+    width: 120px;
+    height: 85px;
+}
+.club_logo img {
+    object-fit: contain;
+}
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.name span {
+    color: #000;
+}
+.date span {
+    font-weight: bold;
+}
+
+/* Start edit match page */
+.oneInput{
+    margin-bottom: 25px;
+}
+.oneInput input {
+    width: 100%;
+}
+
+/* Show data site page */
+.add-new-site h1 {
+    color: #000;
+    font-size: 21px;
+}
+
+.options {
+    padding: 75px;
+    background: var(--main-color);
+    border-radius: 12px;
+}
+.options span {
+    font-size: 60px;
+    color: #fff;
+}
+
+/*  Start page create img */
+.saveSetting {
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 6px;
+    border: 0;
+    padding: 7px 16px;
+}
+.saveSetting span {
+    color: #fff;
+}
+.preview {
+    background: var(--main-color);
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px;
+    height: 350px;
+    position: relative;
+}
+.cardView {
+    width: 100%;
+}
+.logoClube {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+div#logoOne {
+    top: 97px;
+    left: 543px;
+}div#logoTwo {
+     left: 146px;
+     top: 97px;
+ }
+.infoClube .name {
+    position: absolute;
+    background: #ddd;
+    padding: 7px 10px;
+    border-radius: 25px;
+    text-align: center;
+    width: 166px;
+}
+.infoClube .name span, .logoClube span {
+    user-select: none;
+}
+.infoClube .name, .logoClube  {
+    cursor: grab;
+}
+.setting table {
+    width: 100%;
+}
+.setting thead th {
+    text-align: right;
+}
+.setting td {
+    padding: 8px 2px;
+}
+.inputSetting{
+    display : flex;
+    justify-content: space-around;
+}
+.inputSetting input{
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+    color:#000
+}
+div#nameTwo {
+    left: 170px;
+    top: 274px;
+}
+div#nameOne {
+    left: 571px;
+    top: 274px;
+}
+input[type="color"] {
+    display: block;
+    padding: 0;
+    border: 0;
+    width: 24px;
+}
+/* Support page */
+.support-table {
+    margin: 30px 0;
+}
+.table table {
+    width: 100%;
+}
+.table thead {
+    text-align: center;
+    display: table-row-group;
+    height: 43px;
+    background: #3b3b3b;
+}
+
+.table thead th {
+    color: #fff;
+}
+.table tbody {
+    text-align: center;
+}
+.table td {
+    padding: 15px 13px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.table tr:nth-child(even) {
+    border: 1px solid #ddd;
+    background: #ddd;
+}
+span.tag-copy {
+    cursor: pointer;
+}
+span.tag-copy:hover {
+    color: #000;
+}
